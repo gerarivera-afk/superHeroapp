@@ -96,16 +96,7 @@ class _SuperheroSearchScreenState extends State<SuperheroSearchScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 8.0, right: 8, left: 8),
-              child: ClipRRect(
-                borderRadius: BorderRadiusGeometry.circular(16),
-                child: Image.network(
-                  item.url,
-                  width: double.infinity,
-                  height: 250,
-                  fit: BoxFit.cover,
-                  alignment: AlignmentGeometry.topCenter,
-                ),
-              ),
+              child: ClipRRect(borderRadius: BorderRadiusGeometry.circular(16)),
             ),
             Text(
               item.name,
